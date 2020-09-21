@@ -70,10 +70,28 @@ h3{
  No media query for `xs` since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) { 
+@media (max-width: 421px) { 
+
     .container{
-    	display: none;
+    	position: relative;
     }
+    #products{
+    	margin-top: 150px;
+    	margin-left: -100px;
+
+    }
+}
+@media(max-width: 576px) and (min-width: 422px){
+	.container{
+		position: relative;
+	}
+	#about>h3,#about>p,#about>img{
+		display: none;
+	}
+	#products{
+		margin-top: 150px;
+		margin-left: -180px;
+	}
 }
 
 /* Medium devices (tablets, 768px and up)*/
